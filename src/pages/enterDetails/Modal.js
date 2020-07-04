@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Connect4Context } from '../../store'
+import React from 'react';
 import './enterDetails.css'
 
 export default ({ gameModal, value, setValue1, title, handleOnChange, handleCancel }) => {

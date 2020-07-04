@@ -3,7 +3,7 @@ import Row from './row'
 import { Connect4Context } from '../../store'
 import './playGame.css'
 
-export default ({ board, winner, currentPlayer, winingPattern, play }) => {
+export default ({ board, score1, score2, winner, currentPlayer, winingPattern, play }) => {
 
     const { player1Name, player2Name, game, starts } = React.useContext(Connect4Context)
 
@@ -34,7 +34,7 @@ export default ({ board, winner, currentPlayer, winingPattern, play }) => {
                     <label className="player-text">Player 1</label>
                     <label className="player-score-text">Score</label>
                     <label className="player-name">{player1Name}</label>
-                    <label className="player-score-num"></label>
+                    <label className="player-score-num">{score1}</label>
                 </div>
                 <div className="player2-score">
                     <div className="outer">
@@ -52,7 +52,7 @@ export default ({ board, winner, currentPlayer, winingPattern, play }) => {
                     <label className="player-text">Player 2</label>
                     <label className="player-score-text">Score</label>
                     <label className="player-name">{player2Name}</label>
-                    <label className="player-score-num"></label>
+                    <label className="player-score-num">{score2}</label>
                 </div>
             </div>
             <div className="board">

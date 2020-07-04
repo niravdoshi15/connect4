@@ -1,16 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Connect4Context } from '../../store'
 import Board from './board'
 
 export default () => {
-
-    const { player1Name, player2Name, game, starts } = React.useContext(Connect4Context)
-
-
-    // let gameLength = []
-    // for (let i = 1; i <= game; i++) {
-    //     gameLength.push(i)
-    // }
 
     const player1 = 1
     const player2 = 2
@@ -22,6 +13,8 @@ export default () => {
     const [gameOver, setGameOver] = useState(false)
     const [winingPattern, setWiningPattern] = useState([])
     const [winner, setWinner] = useState('')
+    const [score1, setScore1] = useState(0)
+    const [score2, setScore2] = useState(0)
 
     useEffect(() => {
         let b = [];
@@ -51,10 +44,14 @@ export default () => {
             if (result === player1) {
                 setBoard(b)
                 setGameOver(true)
+                let s = score1 + 1
+                setScore1(s)
                 setWinner(player1.toString())
             } else if (result === player2) {
                 setBoard(b)
                 setGameOver(true)
+                let s = score2 + 1
+                setScore2(s)
                 setWinner(player2.toString())
             } else if (result === 'draw') {
                 setBoard(b)
@@ -87,7 +84,7 @@ export default () => {
 
     const checkHorizontal = (board) => {
         for (let r = 0; r < c4rows; r++) {
-            for (let c = 0; c < 4; c++) {
+            for (let c = 0; c < 5; c++) {
                 if (board[r][c]) {
                     if (board[r][c] === board[r][c + 1] &&
                         board[r][c] === board[r][c + 2] &&
@@ -154,7 +151,7 @@ export default () => {
 
     return (
         <div>
-            <Board board={board} currentPlayer={currentPlayer} winner={winner} winingPattern={winingPattern} play={play} />
+            <Board board={board} score1={score1} score2={score2} currentPlayer={currentPlayer} winner={winner} winingPattern={winingPattern} play={play} />
         </div>
 
     )
