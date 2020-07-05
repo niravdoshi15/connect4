@@ -239,11 +239,10 @@ button {
 
 .game-modal {
     position:absolute;
-    margin-top: 44px;
-    margin-left: 75px;
-    width: 610px;
-    height: 800px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    margin-top: 3%;
+    margin-left: 4%;
+    width: 90%;
+    height: 90%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #F7F7F7;
@@ -258,10 +257,11 @@ button {
 .modal-title {
     position: absolute;
     font-size: 160%;
-    margin-top: 40px;
-    margin-left: 151px;
-    width: 308px;
-    height: 51px;
+    -top: 40px;
+    margin-top: 2%;
+    margin-left: 25%;
+    width: 50%;
+    height: 6%;
     text-align: center;
     font: Medium 36px/55px Poppins;
     letter-spacing: 0px;
@@ -271,17 +271,17 @@ button {
 
 .radio-box {
     position: absolute;
-    width: 500px;
+    width: 90%;
     height: 445px;
-    margin-top: 120px;
-    margin-left: 55px;
+    margin-top: 10%;
+    margin-left: 6%;
 }
 
 .radio-container {
     position: relative;
-    width: 500px;
-    height: 80px;
-    margin-top: 10px;
+    width: 98%;
+    height: 16%;
+    margin-top: 2%;
     background: #EFF3FF 0% 0% no-repeat padding-box;
     border: 1px solid #70707026;
     border-radius: 15px;
@@ -291,9 +291,9 @@ button {
 .radio-text {
     position: absolute;
     font-size: 160%;
-    margin-left: 88px;
-    width: 180px;
-    height: 39px;
+    margin-left: 10%;
+    width: 60%;
+    height: 90%;
     text-align: left;
     font: Regular 28px/42px Poppins;
     letter-spacing: 0px;
@@ -303,12 +303,12 @@ button {
 
 .radio-div {
     position: relative;
-    margin-top: 21px;
-    margin-left: 28px
+    margin-top: 3%;
+    margin-left: 3%;
 }
 
 input[type=radio] {
-    width: 30px;
+    width: 6%;
     height: 30px;
     background: #4B7BFF 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -316,9 +316,9 @@ input[type=radio] {
 
 .line-break {
     position: absolute;
-    margin-top: 610px;
-    margin-left: 41px;
-    width: 530px;
+    margin-top: 85%;
+    margin-left: 5%;
+    width: 90%;
     height: 0px !important;
     background-color: #707070;
     border: 1px solid #707070;
@@ -327,10 +327,10 @@ input[type=radio] {
 
 .cancel-button {
     position: absolute;
-    margin-top: 650px;
-    margin-left: 41px;
-    width: 250px;
-    height: 80px;
+    margin-top: 90%;
+    margin-left: 8%;
+    width: 40%;
+    height: 12%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #4B7BFF26;
@@ -340,10 +340,10 @@ input[type=radio] {
 
 .cancel-text {
     position: relative;
-    margin-left: 75px;
+    margin-left: 34%;
     font-size: 160%;
-    width: 124px;
-    height: 45px;
+    width: 30%;
+    height: 30%;
     text-align: center;
     font: Medium 32px/48px Poppins;
     letter-spacing: 0px;
@@ -353,11 +353,11 @@ input[type=radio] {
 
 .ok-button {
     position: absolute;
-    margin-top: 650px;
-    margin-left: 321px;
+    margin-top: 90%;
+    margin-left: 55%;
     font-size: 160%;
-    width: 250px;
-    height: 80px;
+    width: 40%;
+    height: 12%;
     background: #4B7BFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #70707026;
@@ -367,9 +367,9 @@ input[type=radio] {
 
 .ok-text {
     position: relative;
-    margin-left: 90px;
-    width: 46px;
-    height: 45px;
+    margin-left: 40%;
+    width: 30%;
+    height: 30%;;
     color: var(--unnamed-color-ffffff);
     text-align: center;
     font: Medium 32px/48px Poppins;
