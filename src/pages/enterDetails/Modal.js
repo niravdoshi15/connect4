@@ -17,7 +17,7 @@ export default ({ gameModal, value, setValue1, title, handleOnChange, handleCanc
             <span className="modal-title">{title}</span>
             <div className="radio-box">
                 {gameModal.map((g, i) => {
-                    return <div className="radio-container" key={i}>
+                    return <div className="radio-container" key={i} onClick={(e) => setValue1(g.value.toString())}>
                         <div className="radio-div">
                             <input type="radio" value={g.value} checked={value===g.value.toString()} onChange={(e) => setValue1(e.target.value)}/>
                             <label className="radio-text">{g.displayText}</label>

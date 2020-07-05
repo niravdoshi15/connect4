@@ -67,7 +67,7 @@ export default ({ playType }) => {
 
     const handleOnChangeGame = (e) => {
         e.preventDefault()
-        setValue('Game', e.target.value)
+        setValue('Game', value)
         setValue('Game Modal', false)
     }
 
@@ -79,7 +79,7 @@ export default ({ playType }) => {
 
     const handleOnChangeStart = (e) => {
         e.preventDefault()
-        setValue('Starts', e.target.value)
+        setValue('Starts', value)
         setValue('Start Modal', false)
     }
 
@@ -139,7 +139,7 @@ export default ({ playType }) => {
             </div>
             <div className="line"></div>
             <button className="start-button" onClick={onStartButton}>
-                <label style={{ marginLeft: "190px" }}>START GAME</label>
+                <label style={{ marginLeft: "30%" }}>START GAME</label>
             </button>
         </div>
     )
