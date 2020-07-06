@@ -13,8 +13,6 @@ export default ({ board, score1, score2, winner, currentPlayer, winingPattern, p
     let winningCols = []
     return (
         <div>
-            <div className="board-screen">
-            </div>
             <div className="score-panel">
                 <label className="tournament-heading">{`${game} Games Tournament`}</label>
                 {winningPlayer ? <label className="game-number">{`${winningPlayer}, you won the game`}</label> : null}

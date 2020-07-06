@@ -122,7 +122,7 @@ export default ({ playType }) => {
                 <span className="player1-field">Number of Game</span>
                 <div className="player2-input">
                     <button onClick={onGameClick}>
-                        <label className="game-value">{game !== '' ? `${game} game` : ''}</label>
+                        <label className="game-value">{game !== '' ? `${game} Games` : ''}</label>
                     </button>
                 </div>
             </div>
